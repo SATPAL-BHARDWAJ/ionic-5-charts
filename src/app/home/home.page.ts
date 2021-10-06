@@ -19,7 +19,6 @@ export class HomePage implements AfterViewInit, OnInit {
   ngOnInit() {
     
   }
-
  
   async ngAfterViewInit() {
 
