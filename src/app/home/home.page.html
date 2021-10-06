@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      Example of Chart.js
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-gray">
+  <ion-list class="cus-card">
+    <ion-list-header>
+      <ion-label>
+        Select Chart type
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-item class="ion-padding-horizontal" lines="none">
+      <ion-label> Charts </ion-label>
+      <ion-select value="bar" okText="Create" cancelText="Cancel" mode="ios" (ionChange)="changeChart($event)" color="danger">
+        <ion-select-option value="bar">Bar</ion-select-option>
+        <ion-select-option value="line">Lines</ion-select-option>
+        <ion-select-option value="radar">Radar</ion-select-option>
+        <ion-select-option value="doughnut">Doughnut</ion-select-option>
+        <ion-select-option value="pie">Pie</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>  
+
+  <div class="bg-white cus-card">
+    <canvas #chartCanvas></canvas>
+  </div>
+
+  <div class="cus-card bg-white ion-padding">
+    <p>Design & Developed by <a href="https://sbsharma.com/" target="_blank">sbsharma.com</a> </p>
+  </div>
+</ion-content>
